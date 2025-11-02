@@ -20,7 +20,7 @@ const authMiddleware = async (req, res, next) => {
     const decoded = verifyToken(token);
     
     req.user = {
-      userId: decoded.userId // This matches what generateToken puts in the token
+      userId: decoded.userId 
     };
     
     next();

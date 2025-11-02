@@ -6,7 +6,7 @@ const JWT_SECRET = process.env.JWT_SECRET || 'test-secret';
 const generateToken = (user) => {
   return jwt.sign(
     { 
-      userId: user._id.toString(), // Use 'userId' to match middleware
+      userId: user._id.toString(), 
       username: user.username 
     },
     JWT_SECRET,
