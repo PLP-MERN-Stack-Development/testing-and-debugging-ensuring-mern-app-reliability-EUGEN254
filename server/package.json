@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npx jest",
+    "test:unit": "npx jest --testPathPatterns=tests/unit",
+    "test:integration": "npx jest --testPathPatterns=tests/integration"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.2",
+    "supertest": "^7.1.4"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.3.0"
+  }
+}
